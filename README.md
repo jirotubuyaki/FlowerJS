@@ -8,10 +8,10 @@ https://code.createjs.com/createjs-2013.12.12.min.js EaselJS 0.7.1, TweenJS 0.5.
 
 ### Please Look
 [Random-Flower DEMO](http://okaal.html.xdomain.jp/logs/generative-art/createjs/flower/flower_random.html)  
-The Flowers of colors and shapes randomly change. 
 
 ### ScreenShot  
 ![ScreenShot](https://github.com/jirotubuyaki/Random-Flower/blob/master/ScreenShot.png)  
+The colors and shapes of flowers randomly change. 
 
 ### Acknowledgments
 This activity would not have been possible without the support of my family and friends. To my family, thank you for lots of encouragement for me and inspiring me to follow my dreams. I am especially grateful to my parents, who supported me all aspects.
