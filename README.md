@@ -54,7 +54,7 @@ The Flower types are now two version. "Flower()" and "FlowerRnd()".
 
 ### How to use motion
 This framework can use all TweenJS actions. Please look https://createjs.com/tweenjs .  
-We also added new properties for flowers. flower_obj_1.flower is the flower shape object. So please send the object to .get() method. 
+We also added new properties for flowers. "flower_obj_1.flower" is the flower shape object. So please send the object to .get() method. 
 
 ``` 
 createjs.Tween.get(flower_obj_1.flower)
