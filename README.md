@@ -35,20 +35,21 @@ var start = function() {
 Codes for creating flowers are below.
 ```
 var flower_obj_1 = new Flower();
-var flower_obj_2 = new Flower();
+var flower_obj_2 = new FlowerRnd();
 flower_obj_1.init().setSize(50).setPetalSize(56).setColor("#ff1493").setPetal(8).setPile(2,1.2).setAlpha(0.5).create(200,200);
-flower_obj_2.init().setSize(10).setPetalSize(56).setColor("#ff1493").setPetal(8).setPile(3,1.2).setAlpha(0.5).create(200,200);
+flower_obj_2.init().setSize(10).setPetalSize(56).setColor("#ff1493").setPetal(8).setPile(3,1.2).setAlpha(0.5).setNoise(1.2).create(200,200);
 stage.addChild(flower_obj_1.flower);
 stage.addChild(flower_obj_2.flower);
 ``` 
 
-The Flower types are now two version. Flower() and FlowerRnd().
+The Flower types are now two version. "Flower()" and "FlowerRnd()".
 * setSize(50): a flower base size.
 * setPetalSize(56): a flower petals size.
 * setColor("#ff1493"): a flower color.
 * setPetal(8): a flower petals number.
 * setPile(2, 1.2): a flower pile number.
 * setAlpha(0.5): a flower transparent rate.
+* setNoise(1.2): a flower noise rate for FlowerRnd()
 * create(200, 200): creating flower at x and y points.
 
 ### How to use motion
