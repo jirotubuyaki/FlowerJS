@@ -1,7 +1,7 @@
 <p align="center"><img width="470px" src="https://raw.githubusercontent.com/jirotubuyaki/jirotubuyaki.github.io/master/gimp/profile.png"></p>
 
 ### Introduction
-Creating flower shapes and flexible motion framework for HTML Canvas. This framework extended CreateJS https://createjs.com/ .
+Creating flower shapes and flexible motion framework for HTML Canvas. This framework extended CreateJS https://createjs.com/ .Now the two types of flowers are provided. You can change the petal number and color. Many easy coded motion properties are provided too. 
 
 ### Installation
 This framework is based on CreateJS. So plese add script sources on HTML5 head.
@@ -54,7 +54,7 @@ The Flower types are now two version. "Flower()" and "FlowerRnd()".
 
 ### How to use motion
 This framework can use all TweenJS actions. Please look https://createjs.com/tweenjs .  
-We also added new properties for flowers.
+We also added new properties for flowers. flower_obj_1.flower is the flower shape object. So please send the object to .get() method. 
 
 ``` 
 createjs.Tween.get(flower_obj_1.flower)
