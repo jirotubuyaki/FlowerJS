@@ -1,6 +1,6 @@
 /*!
 * TweenJS-EX
-* Visit https://github.com/jirotubuyaki/HTML5-Canvas-Animation-FlowerJS
+* Visit https://github.com/jirotubuyaki
 *
 * Copyright (c) 2023 Masashi OKADA.
 *
