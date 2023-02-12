@@ -2536,6 +2536,9 @@ this.createjs = this.createjs||{};
 				else if(this.target.label == "rnd"){
 					this.flowerrnd_sprite(v, n_sp[2]);
 				}
+				else if(this.target.label == "sun"){
+					this.sunflower_sprite(v, n_sp[2]);
+				}
 				//console.log(this.target[n]);
 			}
 			else{
@@ -2608,7 +2611,46 @@ this.createjs = this.createjs||{};
 			}
 		}
 	};
-	
+	p.sunflower_sprite = function(v, index){
+		for(var i = 0; i < this.target.pile; i++){
+			var count = 0;
+			this.target.graphics_out[i].clear();
+			this.target.graphics_out[i].beginStroke(this.target.color).beginFill(this.target.color);
+			var petal_size = 360 / this.target.petal;
+			for(var j = 0; j <= 360; j = j + petal_size){
+				this.target.rate_count[index] = v;
+				//for(var k in target_n_index){
+				//	this.target.rate_count[k] = target_n[k];
+				//	console.log(k);
+				//}
+				if(count == 0){
+					this.target.graphics_out[i].moveTo(this.target.size * Math.cos(0 * Math.PI / 180), this.target.size * Math.sin(0 * Math.PI / 180));
+				}
+				if(j + petal_size >= 360){
+					this.target.graphics_out[i].quadraticCurveTo((this.target.size + this.target.petal_size) * this.target.rate_count[count] * Math.cos((j + petal_size - petal_size / 2) * Math.PI / 180), (this.target.size + this.target.petal_size) * this.target.rate_count[count] * Math.sin((j + petal_size - petal_size / 2) * Math.PI / 180), this.target.size * Math.cos(0 * Math.PI/180), this.target.size * Math.sin(0 * Math.PI/180));
+				}
+				else{
+					this.target.graphics_out[i].quadraticCurveTo((this.target.size + this.target.petal_size) * this.target.rate_count[count] * Math.cos((j + petal_size - petal_size / 2) * Math.PI / 180), (this.target.size + this.target.petal_size) * this.target.rate_count[count] * Math.sin((j + petal_size - petal_size / 2) * Math.PI / 180), this.target.size * Math.cos((j + petal_size) * Math.PI / 180), this.target.size * Math.sin((j + petal_size) * Math.PI / 180));
+				}
+				count++;
+			}
+			count = 0;
+            for(var j = 0; j <= 360; j = j + 13){
+                this.target.graphics_out_line[count].clear();
+                this.target.graphics_out_line[count].beginStroke(this.target.color_line).setStrokeStyle(1.0);
+                this.target.graphics_out_line[count].moveTo(this.target.size * Math.cos(j * Math.PI / 180), this.target.size * Math.sin(j * (Math.PI / 180)));
+                this.target.graphics_out_line[count].lineTo(this.target.size * Math.cos((180 - j) * Math.PI / 180), this.target.size * Math.sin((180 - j) * (Math.PI / 180)));
+                count++;
+            }
+            for(var j = 0; j <= 360; j = j + 13){
+				this.target.graphics_out_line[count].clear();
+                this.target.graphics_out_line[count].beginStroke(this.target.color_line).setStrokeStyle(1.0);
+                this.target.graphics_out_line[count].moveTo(this.target.size * Math.cos((j-45) * Math.PI / 180), this.target.size * Math.sin((j-45) * (Math.PI / 180)));
+                this.target.graphics_out_line[count].lineTo(this.target.size * Math.cos((180+45-j) * Math.PI / 180), this.target.size * Math.sin((180+45-j) * (Math.PI / 180)));
+                count++;
+            }
+		}
+	};
 	/**
 	 * @method _runActionsRange
 	 * @param {Number} startPos
