@@ -1,7 +1,7 @@
 <p align="center"><img width="470px" src="https://raw.githubusercontent.com/jirotubuyaki/jirotubuyaki.github.io/master/gimp/profile.png"></p>
 
 ### Introduction
-Creating flower shapes and flexible motion framework for HTML Canvas. This framework extended CreateJS https://createjs.com/ .Now the two types of flowers are provided. You can change the petal number and color. Many easy coded motion properties are provided too. 
+Creating flower shapes and flexible motion framework for HTML Canvas. This framework extended CreateJS https://createjs.com/ .Now the three types of flowers are provided. You can change the petal number and color. Many easy coded motion properties are provided too. 
 
 ### Installation
 This framework is based on CreateJS. So plese add script sources on HTML5 head.
@@ -23,7 +23,9 @@ tweenjs_ex.js is modified tweenjs.js.
 </head>
 ```
 
-### How to use
+### How to Create Flowers 
+<p align="center"><img width="420px" src="https://raw.githubusercontent.com/jirotubuyaki/jirotubuyaki.github.io/master/gimp/screen_flower_1.png"></p>
+
 Firstly, please write Html5 Canvas accsess on your javascript codes.
 ```
 var start = function() {
@@ -34,15 +36,20 @@ var start = function() {
 
 Codes for creating flowers are below.
 ```
-var flower_obj_1 = new Flower();
-var flower_obj_2 = new FlowerRnd();
+var flower_obj_1 = new Flower();  // Normal Flower
+var flower_obj_2 = new FlowerRnd(); // Noise Flower
+var sunflower_obj_1 = new SunFlower(); // SunFlower
+
 flower_obj_1.init().setSize(50).setPetalSize(56).setColor("#ff1493").setPetal(8).setPile(2,1.2).setAlpha(0.5).create(200,200);
-flower_obj_2.init().setSize(10).setPetalSize(56).setColor("#ff1493").setPetal(8).setPile(3,1.2).setAlpha(0.5).setNoise(1.2).create(200,200);
+flower_obj_2.init().setSize(10).setPetalSize(56).setColor("#ff1493").setPetal(8).setPile(3,1.2).setAlpha(0.5).setNoise(1.2).create(500,200);
+sunflower_obj_1.init().setSize(100).setPetalSize(45).setColor("#ffd700").setColorLine("#999").setPetal(16).setPile(2,1.2).setAlpha(0.6).create(900,200);
+
 stage.addChild(flower_obj_1.flower);
 stage.addChild(flower_obj_2.flower);
+stage.addChild(sunflower_obj_1.flower);
 ``` 
 
-The Flower types are now two version. "Flower()" and "FlowerRnd()".
+The Flower types are now three version. "Flower()" and "FlowerRnd()" and SunFlower().
 * setSize(50): a flower base size.
 * setPetalSize(56): a flower petals size.
 * setColor("#ff1493"): a flower color.
@@ -90,6 +97,10 @@ https://jirotubuyaki.github.io/FlowerJS/examples/example_1.html
 Shapes Example. The Flower Colors and Shapes Randoms.  
 https://jirotubuyaki.github.io/FlowerJS/examples/example_2.html  
 <p align="left"><img width="250px" src="https://raw.githubusercontent.com/jirotubuyaki/jirotubuyaki.github.io/master/gimp/profile_2.png"></p>
+
+Motion Example. Sunflower shapes.  
+https://jirotubuyaki.github.io/FlowerJS/examples/example_3.html  
+
 
 ### Copyright
 MIT License  
