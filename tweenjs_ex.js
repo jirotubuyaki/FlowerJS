@@ -2567,7 +2567,7 @@ this.createjs = this.createjs||{};
 			this.target.graphics_out[i].clear();
 			this.target.graphics_out[i].beginStroke(this.target.color).beginFill(this.target.color);
 			var petal_size = 360 / this.target.petal;
-			for(var j = 0; j <= 360; j = j + petal_size){
+			for(var j = 0; j < 360; j = j + petal_size){
 				this.target.rate_count[index] = v;
 				//for(var k in target_n_index){
 				//	this.target.rate_count[k] = target_n[k];
@@ -2576,7 +2576,7 @@ this.createjs = this.createjs||{};
 				if(count == 0){
 					this.target.graphics_out[i].moveTo(this.target.size * Math.cos(0 * Math.PI / 180), this.target.size * Math.sin(0 * Math.PI / 180));
 				}
-				if(j + petal_size >= 360){
+				if(j + petal_size > 360){
 					this.target.graphics_out[i].quadraticCurveTo((this.target.size + this.target.petal_size) * this.target.rate_count[count] * Math.cos((j + petal_size - petal_size / 2) * Math.PI / 180), (this.target.size + this.target.petal_size) * this.target.rate_count[count] * Math.sin((j + petal_size - petal_size / 2) * Math.PI / 180), this.target.size * Math.cos(0 * Math.PI/180), this.target.size * Math.sin(0 * Math.PI/180));
 				}
 				else{
@@ -2592,7 +2592,7 @@ this.createjs = this.createjs||{};
 			this.target.graphics_out[i].clear();
 			this.target.graphics_out[i].beginStroke(this.target.color).beginFill(this.target.color);
 			var petal_size = 360 / this.target.petal;
-			for(var j = 0; j <= 360; j = j + petal_size){
+			for(var j = 0; j < 360; j = j + petal_size){
 				this.target.rate_count[index] = v;
 				//for(var k in target_n_index){
 				//	this.target.rate_count[k] = target_n[k];
@@ -2601,7 +2601,7 @@ this.createjs = this.createjs||{};
 				if(count == 0){
 					this.target.graphics_out[i].moveTo(this.target.size * Math.cos(0 * Math.PI / 180), this.target.size * Math.sin(0 * Math.PI / 180));
 				}
-				if(j + petal_size >= 360){
+				if(j + petal_size > 360){
 					this.target.graphics_out[i].quadraticCurveTo((this.target.noise_2[count] + this.target.size + this.target.petal_size) * this.target.rate_count[count] * Math.cos((this.target.noise_1[count] + j + petal_size - petal_size / 2) * Math.PI / 180), (this.target.noise_2[count] + this.target.size + this.target.petal_size) * this.target.rate_count[count] * Math.sin((this.target.noise_1[count] + j + petal_size - petal_size / 2) * Math.PI / 180), this.target.size * Math.cos(0 * Math.PI/180), this.target.size * Math.sin(0 * Math.PI/180));
 				}
 				else{
@@ -2617,7 +2617,7 @@ this.createjs = this.createjs||{};
 			this.target.graphics_out[i].clear();
 			this.target.graphics_out[i].beginStroke(this.target.color).beginFill(this.target.color);
 			var petal_size = 360 / this.target.petal;
-			for(var j = 0; j <= 360; j = j + petal_size){
+			for(var j = 0; j < 360; j = j + petal_size){
 				this.target.rate_count[index] = v;
 				//for(var k in target_n_index){
 				//	this.target.rate_count[k] = target_n[k];
@@ -2626,7 +2626,7 @@ this.createjs = this.createjs||{};
 				if(count == 0){
 					this.target.graphics_out[i].moveTo(this.target.size * Math.cos(0 * Math.PI / 180), this.target.size * Math.sin(0 * Math.PI / 180));
 				}
-				if(j + petal_size >= 360){
+				if(j + petal_size > 360){
 					this.target.graphics_out[i].quadraticCurveTo((this.target.size + this.target.petal_size) * this.target.rate_count[count] * Math.cos((j + petal_size - petal_size / 2) * Math.PI / 180), (this.target.size + this.target.petal_size) * this.target.rate_count[count] * Math.sin((j + petal_size - petal_size / 2) * Math.PI / 180), this.target.size * Math.cos(0 * Math.PI/180), this.target.size * Math.sin(0 * Math.PI/180));
 				}
 				else{
@@ -2635,14 +2635,14 @@ this.createjs = this.createjs||{};
 				count++;
 			}
 			count = 0;
-            for(var j = 0; j <= 360; j = j + 13){
+            for(var j = 0; j < 360; j = j + 13){
                 this.target.graphics_out_line[count].clear();
                 this.target.graphics_out_line[count].beginStroke(this.target.color_line).setStrokeStyle(1.0);
                 this.target.graphics_out_line[count].moveTo(this.target.size * Math.cos(j * Math.PI / 180), this.target.size * Math.sin(j * (Math.PI / 180)));
                 this.target.graphics_out_line[count].lineTo(this.target.size * Math.cos((180 - j) * Math.PI / 180), this.target.size * Math.sin((180 - j) * (Math.PI / 180)));
                 count++;
             }
-            for(var j = 0; j <= 360; j = j + 13){
+            for(var j = 0; j < 360; j = j + 13){
 				this.target.graphics_out_line[count].clear();
                 this.target.graphics_out_line[count].beginStroke(this.target.color_line).setStrokeStyle(1.0);
                 this.target.graphics_out_line[count].moveTo(this.target.size * Math.cos((j-45) * Math.PI / 180), this.target.size * Math.sin((j-45) * (Math.PI / 180)));

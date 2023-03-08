@@ -97,7 +97,7 @@ Flower.prototype = {
             this.flower.graphics_out[i] = new createjs.Graphics();
             this.flower.graphics_out[i].beginStroke(this.flower.color).beginFill(this.flower.color);
             var petal_size = 360 / this.flower.petal;
-            for(var j = 0; j <= 360; j = j + petal_size){
+            for(var j = 0; j < 360; j = j + petal_size){
                 if(count == 0){
                     this.flower.graphics_out[i].moveTo(this.flower.size * Math.cos(0 * Math.PI / 180), this.flower.size * Math.sin(0 * Math.PI / 180));
                 }
@@ -206,7 +206,7 @@ FlowerRnd.prototype = {
             this.flower.graphics_out[i] = new createjs.Graphics();
             this.flower.graphics_out[i].beginStroke(this.flower.color).beginFill(this.flower.color);
             var petal_size = 360 / this.flower.petal;
-            for(var j = 0; j <= 360; j = j + petal_size){
+            for(var j = 0; j < 360; j = j + petal_size){
                 if(count == 0){
                     this.flower.graphics_out[i].moveTo(this.flower.size * Math.cos(0 * Math.PI / 180), this.flower.size * Math.sin(0 * Math.PI / 180));
                 }
