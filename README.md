@@ -1,7 +1,8 @@
 <p align="center"><img width="470px" src="https://raw.githubusercontent.com/jirotubuyaki/jirotubuyaki.github.io/master/gimp/profile.png"></p>
 
 ### Introduction
-Create flower shapes and flexible animation framework for HTML5 Canvas. This framework extended CreateJS https://createjs.com/ .Now the three types of flowers are provided. You can change the petal number and color. Many easy coded motion properties are provided too. 
+
+JavaScript Framework for Flower Shapes and Motion Animation extended CreateJS on HTML Canvas. This framework extended CreateJS https://createjs.com/ .Now the three types of flowers are provided. You can change the petal number and color. Many easy coded motion properties are provided too. 
 
 ### Installation
 This framework is based on CreateJS. So plese add script sources on HTML5 head.
