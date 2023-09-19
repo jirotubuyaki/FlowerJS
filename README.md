@@ -1,4 +1,4 @@
-<p align="center"><img width="470px" src="https://raw.githubusercontent.com/jirotubuyaki/jirotubuyaki.github.io/master/gimp/profile.png"></p>
+<p align="center"><img width="400px" src="https://raw.githubusercontent.com/jirotubuyaki/jirotubuyaki.github.io/master/gimp/profile_3.png"></p>
 
 ### Introduction
 
@@ -94,7 +94,11 @@ function handleTick(){
 Motion Example. The Flower and FlowerRnd.  
 https://jirotubuyaki.github.io/FlowerJS/examples/example_1.html  
 <p align="left"><img src="https://raw.githubusercontent.com/jirotubuyaki/jirotubuyaki.github.io/master/gimp/example_1.png"></p>
- 
+
+Shapes Example.  
+https://jirotubuyaki.github.io/FlowerJS/examples/example_1_big.html  
+<p align="left"><img src="https://raw.githubusercontent.com/jirotubuyaki/jirotubuyaki.github.io/master/gimp/example_1_big.png"></p>
+
 Shapes Example. The Flower Colors and Shapes Randoms.  
 https://jirotubuyaki.github.io/FlowerJS/examples/example_2.html  
 <p align="left"><img width="250px" src="https://raw.githubusercontent.com/jirotubuyaki/jirotubuyaki.github.io/master/gimp/profile_2.png"></p>
